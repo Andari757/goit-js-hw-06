@@ -22,3 +22,25 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+.gallery{  
+  list-style: none;
+display: grid;
+justify-content: center;
+grid-gap: 2px;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery>li:nth-child(1){
+grid-column: 1/2;
+}
+.gallery>li:nth-child(2) {
+  grid-column: 2/4;
+}
+.gallery>li:nth-child(3) {
+  grid-column: 3/4;
+}
+.gallery>li>img{
+  width: 100%;
+border-radius: 40%;
+  
+}
